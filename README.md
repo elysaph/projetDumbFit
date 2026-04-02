@@ -26,6 +26,8 @@ Site GitHub Pages à venir
 - HTML/CSS/JS
 - PHP/SQL
 - CRUD
+- MCD
+- Outils de conception
 
 ## Contribution
 

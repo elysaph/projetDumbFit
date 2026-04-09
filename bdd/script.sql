@@ -117,4 +117,4 @@ create table objectif(
     primary key(id)
 );
 
-insert into objectif(libelle) VALUES("dormir 8h par jour");
+insert into objectif(libelle) VALUES("faire plus de sport");

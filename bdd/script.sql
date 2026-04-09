@@ -2,7 +2,7 @@ create database dumbfit;
 use dumbfit;
 
 --table user classique 
-create table user(
+create table clients(
     id int  not null auto_increment,
     nom varchar(255) not null,
     prenom varchar(255) not null,
@@ -37,10 +37,9 @@ create table cibler(
     id int not null auto_increment,
     id_user int,
     id_categorie int,
-    foreign key (id_user) references user(id),
+    foreign key (id_user) references clients(id),
     foreign key (id_categorie) references categorie(id),
     primary key(id)
-
 );
 -- table des proffesionelle de sante  avec  des clé etrangere  staff pour la validation et categorie pour qu'il choisi son dommaine
 create table pros(
@@ -66,7 +65,7 @@ create table choix(
     id int not null auto_increment,
     id_user int,
     id_pros int,
-    foreign key (id_user) references user(id),
+    foreign key (id_user) references clients(id),
     foreign key (id_pros) references pros(id),
     primary key(id)
 );
@@ -86,7 +85,7 @@ create table relever(
     valeur float,
     id_stat int not null,
     date_stat date default current_date, 
-    foreign key (id_user) references user(id),
+    foreign key (id_user) references clients(id),
     foreign key (id_stat) references stat(id),
     primary key(id)
 );
@@ -97,7 +96,7 @@ create table alerte(
     id_relever int not null,
     messages varchar(255),
     id_pros int,
-    foreign key (id_user) references user(id),
+    foreign key (id_user) references clients(id),
     foreign key (id_relever) references relever(id),
     foreign key(id_pros) references pros(id),
     primary key(id)

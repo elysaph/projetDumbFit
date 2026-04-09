@@ -10,7 +10,7 @@ create table clients(
     datenaissance date not null,
     tel varchar (12) not null,
     mdp varchar (255) not null,
-    taille int not null,
+    taille_cm int not null, -- en cm
     obj varchar(255),
     primary key (id)
 );
@@ -102,7 +102,7 @@ create table alerte(
     primary key(id)
 );
 create table recommendation(
-    id int not auto_increment,
+    id int not null auto_increment,
     libelle varchar(255) not null,
     valeur float not null,
     primary key(id)

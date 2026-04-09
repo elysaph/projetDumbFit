@@ -23,12 +23,11 @@ create table staff(
     primary key (id)
 );
 
--- table des domaines de sante. j'ai mis les objectif aussi ici parce que je savais pas ou le mettre
+-- table des domaines de sante. 
 
 create table categorie(
     id int  not null auto_increment,
     libelle varchar(255) not null,
-    objectif varchar(255) not null,
     primary key (id)
 );
 
@@ -101,9 +100,18 @@ create table alerte(
     foreign key(id_pros) references pros(id),
     primary key(id)
 );
+
+-- table des recommendation du gouv
 create table recommendation(
     id int not null auto_increment,
     libelle varchar(255) not null,
     valeur float not null,
+    primary key(id)
+);
+
+-- table des objectif 
+create table objectif(
+    id int not null auto_increment,
+    libelle varchar(255),
     primary key(id)
 );

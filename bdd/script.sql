@@ -11,7 +11,9 @@ create table clients(
     tel varchar (12) not null,
     mdp varchar (255) not null,
     taille int not null,
-    obj varchar(255),
+    obj int not null,
+    foreign key(obj) references objectif(id),
+
     primary key (id)
 );
 
@@ -115,3 +117,5 @@ create table objectif(
     libelle varchar(255),
     primary key(id)
 );
+
+insert into objectif(libelle) VALUES("dormir 8h par jour");

@@ -101,3 +101,9 @@ create table alerte(
     foreign key(id_pros) references pros(id),
     primary key(id)
 );
+create table recommendation(
+    id int not auto_increment,
+    libelle varchar(255) not null,
+    valeur float not null,
+    primary key(id)
+);

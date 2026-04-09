@@ -10,7 +10,6 @@ create table clients(
     datenaissance date not null,
     tel varchar (12) not null,
     mdp varchar (255) not null,
-    taille int not null,
     obj int not null,
     foreign key(obj) references objectif(id),
 

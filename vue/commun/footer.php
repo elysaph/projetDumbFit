@@ -1,4 +1,4 @@
-    <footer class="bg-dark text-light border-top border-secondary border-3 py-3 fixed-bottom">
+    <footer class="bg-dark text-light border-top border-secondary border-3 py-3 sticky-bottom">
 
         <div class="container-fluid">
 

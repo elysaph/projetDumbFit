@@ -3,7 +3,7 @@
 try {
     $user = "root";
     $pass = "";
-    $bdd = new PDO("mysql:host=localhost;dbname=sitesport", $user, $pass);
+    $bdd = new PDO("mysql:host=localhost;dbname=dumbfit", $user, $pass);
 } catch (PDOException $e) {
     print "Erreur !:" . $e->getMessage();
     die();

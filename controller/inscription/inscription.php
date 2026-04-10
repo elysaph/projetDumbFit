@@ -1,5 +1,6 @@
 <?php
-include('bdd/bdd.php');
+include('../../bdd/bdd.php');
+
 
 
 if (isset($_POST['inscrire'])) {
@@ -8,7 +9,7 @@ if (isset($_POST['inscrire'])) {
     $mail = $_POST['mail'];
     $datenaissance = $_POST['datenaissance'];
     $tel = $_POST['tel'];
-    $obj = $_POST['objectif'];
+    $obj = $_POST['obj'];
     $mdp = $_POST['mdp'];
 
     $req = $bdd->prepare('INSERT INTO clients(nom, prenom, mail, datenaissance, tel, obj, mdp) VALUES (:nom, :prenom, :mail, :datenaissance, :tel, :obj, :mdp)');
@@ -25,6 +26,3 @@ if (isset($_POST['inscrire'])) {
     header("Location: http://127.0.0.1/BTSSIO/projet/projetDumbFit/index.php?page=accueil");
     exit();
 }
-$req = $bdd->prepare("SELECT * FROM objectif ");
-$req->execute();
-$allobjectif = $req->fetchAll();

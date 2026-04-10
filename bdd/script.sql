@@ -118,3 +118,9 @@ create table objectif(
 );
 
 insert into objectif(libelle) VALUES("faire plus de sport");
+
+insert into clients(nom, prenom, mail, datenaissance, tel, obj, mdp) values("diallo","mamadou","mamadoudesdoucettes@gmail.com",27/06/2002,0658550479,1,"aaaa");
+insert into staff(user, mdp) values("admin","admin");
+
+insert into categorie(libelle) values("sommeil");
+insert into categorie(libelle) values("alimentation");

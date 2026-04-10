@@ -1,4 +1,4 @@
-<form method="POST" action="../../index.php?page=objectif">
+<form method="POST" action="controller/objectif/objectif.php">
     <div class="mb-3">
         <label for="nom" class="form-label">libeller</label>
         <input type="text" class="form-control" id="libelle" name="libelle" aria-describedby="libelleHelp">

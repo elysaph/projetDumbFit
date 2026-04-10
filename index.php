@@ -15,6 +15,7 @@ switch ($page) {
     case 'objectif':
         include('vue/objectif/objectif.php');
         break;
+        
     default:
         include('vue/accueil/accueil.php');
         break;

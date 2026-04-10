@@ -1,12 +1,8 @@
 <?php
-// Traitement des formulaires EN PREMIER, avant tout output HTML
+
 $page = isset($_GET['page']) ? $_GET['page'] : 'accueil';
 
-if ($page === 'inscription') {
-    include('controller/inscription/inscription.php');
-}
 
-// Seulement après les redirections potentielles, on affiche le HTML
 include('vue/commun/header.php');
 
 switch ($page) {

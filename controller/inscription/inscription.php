@@ -22,7 +22,7 @@ if (isset($_POST['inscrire'])) {
     $req->bindParam(':mdp', $mdp);
     $req->execute();
 
-    header("Location: index.php");
+    header("Location: http://127.0.0.1/BTSSIO/projet/projetDumbFit/index.php?page=accueil");
     exit();
 }
 $req = $bdd->prepare("SELECT * FROM objectif ");

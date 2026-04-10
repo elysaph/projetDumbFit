@@ -1,0 +1,38 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="IS-9v07fAvkdfuPaS_dm">
+    <mxGraphModel dx="1268" dy="528" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="aFQlRFaLZyWnk8G4L8gI-1" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="sportif" vertex="1">
+          <mxGeometry height="80" width="120" x="70" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="aFQlRFaLZyWnk8G4L8gI-2" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="stat" vertex="1">
+          <mxGeometry height="80" width="120" x="580" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="aFQlRFaLZyWnk8G4L8gI-3" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" value="dumbfit" vertex="1">
+          <mxGeometry height="150" width="150" x="300" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="aFQlRFaLZyWnk8G4L8gI-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;color: rgb(240, 246, 252); font-family: &amp;quot;Mona Sans VF&amp;quot;, -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, &amp;quot;Noto Sans&amp;quot;, Helvetica, Arial, sans-serif, &amp;quot;Apple Color Emoji&amp;quot;, &amp;quot;Segoe UI Emoji&amp;quot;; font-size: 16px; text-align: start; background-color: rgb(13, 17, 23);&quot;&gt;DumbFit est une application de suivi de santé qui permet aux utilisateurs de monitorer leurs objectifs de bien-être avec une logique de tranches de performance.&lt;/span&gt;" vertex="1">
+          <mxGeometry height="60" width="560" x="100" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="aFQlRFaLZyWnk8G4L8gI-5" edge="1" parent="1" source="aFQlRFaLZyWnk8G4L8gI-1" style="curved=1;endArrow=classic;html=1;rounded=0;" target="aFQlRFaLZyWnk8G4L8gI-2" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="370" y="250" />
+              <mxPoint x="370" y="140" />
+            </Array>
+            <mxPoint x="390" y="300" as="sourcePoint" />
+            <mxPoint x="440" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aFQlRFaLZyWnk8G4L8gI-7" edge="1" parent="1" source="aFQlRFaLZyWnk8G4L8gI-4" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="aFQlRFaLZyWnk8G4L8gI-3" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="390" y="300" as="sourcePoint" />
+            <mxPoint x="440" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

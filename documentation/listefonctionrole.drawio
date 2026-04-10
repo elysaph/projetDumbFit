@@ -1,0 +1,28 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="cwsCHQDgp8_96ywCJ3JX">
+    <mxGraphModel dx="1268" dy="528" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Ldcj7fU3b1BuMsuHtkvB-1" parent="1" style="swimlane;whiteSpace=wrap;html=1;" value="clients" vertex="1">
+          <mxGeometry height="200" width="200" x="50" y="490" as="geometry" />
+        </mxCell>
+        <mxCell id="Ldcj7fU3b1BuMsuHtkvB-2" parent="Ldcj7fU3b1BuMsuHtkvB-1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="-mettre des donnée&lt;div&gt;&lt;br&gt;&lt;div&gt;-contacter&amp;nbsp; un professionnelle de santé&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;-regarder ses stats&amp;nbsp;&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="160" width="200" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Ldcj7fU3b1BuMsuHtkvB-3" parent="1" style="swimlane;whiteSpace=wrap;html=1;" value="proffesionelle de sante" vertex="1">
+          <mxGeometry height="200" width="200" x="290" y="490" as="geometry" />
+        </mxCell>
+        <mxCell id="Ldcj7fU3b1BuMsuHtkvB-4" parent="Ldcj7fU3b1BuMsuHtkvB-3" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="-envoyer un msg a un utilisateur&amp;nbsp;&lt;div&gt;&lt;br&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;-regarder&amp;nbsp; les stats des utilisateur&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="170" width="200" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Ldcj7fU3b1BuMsuHtkvB-5" parent="1" style="swimlane;whiteSpace=wrap;html=1;" value="admin" vertex="1">
+          <mxGeometry height="200" width="200" x="550" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="Ldcj7fU3b1BuMsuHtkvB-6" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="-crud domaine sante&lt;div&gt;&lt;br&gt;&lt;div&gt;-accepte ou refuser les professionelle de sante&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;-crud stat&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="180" width="200" x="550" y="520" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

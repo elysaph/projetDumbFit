@@ -1,3 +1,4 @@
+-- Active: 1775850901045@@127.0.0.1@3306@dumbfit
 create database dumbfit;
 use dumbfit;
 

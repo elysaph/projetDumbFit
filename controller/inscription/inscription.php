@@ -26,3 +26,26 @@ if (isset($_POST['inscrire'])) {
     header("Location: http://127.0.0.1/BTSSIO/projet/projetDumbFit/index.php?page=accueil");
     exit();
 }
+
+if (isset($_POST['sign'])) {
+    $nom = $_POST['nom'];
+    $prenom = $_POST['prenom'];
+    $mail = $_POST['mail'];
+    $tel = $_POST['tel'];
+    $mdp = $_POST['mdp'];
+    $specialite = $_POST['specialite'];
+
+
+    $req = $bdd->prepare('INSERT INTO pros(nom, prenom, mail, tel, mdp, specialite) VALUES (:nom, :prenom, :mail, :tel, :mdp, :specialite )');
+
+    $req->bindParam(':nom', $nom);
+    $req->bindParam(':prenom', $prenom);
+    $req->bindParam(':mail', $mail);
+    $req->bindParam(':tel', $tel);
+    $req->bindParam(':mdp', $mdp);
+    $req->bindParam(':specialite', $specialite);
+    $req->execute();
+
+    header("Location: http://127.0.0.1/BTSSIO/projet/projetDumbFit/index.php?page=accueil");
+    exit();
+}

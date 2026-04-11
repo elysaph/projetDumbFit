@@ -1,5 +1,6 @@
 <?php
 include('controller/inscription/choixobj.php');
+include('controller/categorie/allcategorie.php');
 ?>
 
 <section class="container py-4">
@@ -25,4 +26,3 @@ include('controller/inscription/choixobj.php');
 		<?php include('vue/inscription/formulairepros.php'); ?>
 	</div>
 </section>
-

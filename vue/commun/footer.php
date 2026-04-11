@@ -5,8 +5,12 @@
             <div class="row gy-2 align-items-center">
 
                 <div class="col-12 col-md-4 text-center text-md-start">
-                    <span class="fw-bold text-uppercase small">Adresse :</span>
-                    <span class="small text-white-50 ms-2">950 Av. de la République, 75011 Paris</span>
+                    <span class="fw-bold text-uppercase small">######################</span>
+                    <span class="small text-white-50 ms-2">########################</span>
+                </div>
+                <div class="col-12 col-md-4 text-center text-md-start">
+                    <a href="index.php?page=admin">admin</a>
+
                 </div>
 
                 <div class="col-12 col-md-4 text-center">

@@ -15,11 +15,13 @@ switch ($page) {
     case 'objectif':
         include('vue/objectif/objectif.php');
         break;
-        
+    case 'admin':
+        include('vue/admin/admin.php');
+        break;
+
     default:
         include('vue/accueil/accueil.php');
         break;
 }
 
 include('vue/commun/footer.php');
-?>

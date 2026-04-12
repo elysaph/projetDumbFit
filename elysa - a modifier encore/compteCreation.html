@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Créer un compte | DumbFit</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="app">
+        <header class="topbar">
+            <div class="wrap topbar-row">
+                <a class="brand" href="index.html">DumbFit</a>
+                <nav class="menu" aria-label="Navigation principale">
+                    <a class="menu-link" href="index.html">Tableau de bord</a>
+                    <a class="menu-link" href="profile.html">Profil</a>
+                    <a class="menu-cta" href="create-account.html">Créer un compte</a>
+                </nav>
+            </div>
+        </header>
+
+        <main class="wrap auth-page">
+            <section class="auth-card" aria-labelledby="create-account-title">
+                <h1 id="create-account-title">Créez votre compte</h1>
+                <p>Configurez vos identifiants pour commencer à suivre vos données de santé.</p>
+
+                <form id="account-form" class="form-grid">
+                    <div class="field">
+                        <label for="full-name">Nom complet</label>
+                        <input id="full-name" name="fullName" type="text" autocomplete="name" required>
+                    </div>
+
+                    <div class="field">
+                        <label for="email">Adresse e-mail</label>
+                        <input id="email" name="email" type="email" autocomplete="email" required>
+                    </div>
+
+                    <div class="field">
+                        <label for="password">Mot de passe</label>
+                        <input id="password" name="password" type="password" minlength="8" required>
+                    </div>
+
+                    <div class="field">
+                        <label for="confirm-password">Confirmer le mot de passe</label>
+                        <input id="confirm-password" name="confirmPassword" type="password" minlength="8" required>
+                    </div>
+
+                    <div class="form-actions">
+                        <button class="btn" type="submit">Créer le compte</button>
+                        <a class="link-btn" href="index.html">Retour au tableau de bord</a>
+                    </div>
+
+                    <p id="form-note" class="form-note" aria-live="polite"></p>
+                </form>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js" defer></script>
+</body>
+
+</html>

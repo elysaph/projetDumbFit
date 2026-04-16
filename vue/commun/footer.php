@@ -29,7 +29,7 @@
             </div>
         </div>
     </footer>
-    <script src="asset/script.js?v=20260410"></script>
+    <script src="asset/script.js"></script>
     </body>
 
     </html>

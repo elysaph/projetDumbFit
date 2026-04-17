@@ -1,4 +1,13 @@
-﻿<!doctype html>
+<?php
+// authentification et gestion de session (à implémenter avec la base de données)
+session_start();
+
+// vérification de la connexion de l'utilisateur
+$loggedIn = isset($_SESSION['user_id']);
+$username = $loggedIn ? $_SESSION['username'] : 'utilisateur';
+?>
+
+<!doctype html>
 <html lang="fr">
 
 <head>
@@ -15,11 +24,11 @@
     <div id="app">
         <header class="topbar">
             <div class="wrap topbar-row">
-                <a class="brand" href="/">DumbFit</a>
+                <a class="brand" href="index.php">DumbFit</a>
                 <nav class="menu" aria-label="Navigation principale">
-                    <a class="menu-link active" href="/">Tableau de bord</a>
-                    <a class="menu-link" href="profil.html">Profil</a>
-                    <a class="menu-cta" href="compteCreation.html">Créer un compte</a>
+                    <a class="menu-link active" href="index.php">Tableau de bord</a>
+                    <a class="menu-link" href="profil.php">Profil</a>
+                    <a class="menu-cta" href="compteCreation.php">Créer un compte</a>
                 </nav>
             </div>
         </header>
@@ -27,7 +36,7 @@
         <main class="wrap page">
             <section class="hero">
                 <div>
-                    <p class="eyebrow">Bienvenue, [utilisateur]</p>
+                    <p class="eyebrow">Bienvenue, <?php echo htmlspecialchars($username); ?></p>
                     <h1>Tableau de bord santé</h1>
                     <p>Suivez vos indicateurs de santé</p>
                 </div>

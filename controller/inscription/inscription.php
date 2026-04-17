@@ -1,6 +1,7 @@
 <?php
 include('../../bdd/bdd.php');
 
+session_start();
 
 
 if (isset($_POST['inscrire'])) {

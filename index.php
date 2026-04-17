@@ -18,7 +18,13 @@ switch ($page) {
     case 'admin':
         include('vue/admin/admin.php');
         break;
-
+    case 'deco':
+        include('vue/deco/deco.php');
+        break;
+    case 'connexion':
+        include('vue/connexion/connexion.php');
+        break;    
+            
     default:
         include('vue/accueil/accueil.php');
         break;

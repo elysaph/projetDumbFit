@@ -45,19 +45,19 @@ $username = $loggedIn ? $_SESSION['username'] : 'utilisateur';
 
             <section class="cards" aria-label="Indicateurs de santé">
                 <article class="card tone-red">
-                    <h2><span class="metric-icon">TA</span>Tension artérielle</h2>
+                    <h2><span class="metric-icon">TM</span>Temps de sport</h2>
                     <p class="status">Aucune donnée enregistrée</p>
-                    <p class="range">Plage : 90-120 mmHg</p>
+                    <p class="range">Plage : 50-150 minutes/semaine</p>
                 </article>
                 <article class="card tone-pink">
-                    <h2><span class="metric-icon">FC</span>Fréquence cardiaque</h2>
+                    <h2><span class="metric-icon">HY</span>Hydratation</h2>
                     <p class="status">Aucune donnée enregistrée</p>
-                    <p class="range">Plage : 60-100 bpm</p>
+                    <p class="range">Plage : 2-3L/jour</p>
                 </article>
                 <article class="card tone-blue">
-                    <h2><span class="metric-icon">GS</span>Glycémie</h2>
+                    <h2><span class="metric-icon">XX</span>XXXXX</h2>
                     <p class="status">Aucune donnée enregistrée</p>
-                    <p class="range">Plage : 70-100 mg/dL</p>
+                    <p class="range">Plage : YY-YY/Z</p>
                 </article>
                 <article class="card tone-violet">
                     <h2><span class="metric-icon">PD</span>Poids</h2>
@@ -65,14 +65,14 @@ $username = $loggedIn ? $_SESSION['username'] : 'utilisateur';
                     <p class="range">Plage : 0-999 kg</p>
                 </article>
                 <article class="card tone-orange">
-                    <h2><span class="metric-icon">TM</span>Température</h2>
+                    <h2><span class="metric-icon">XX</span>XXXXX</h2>
                     <p class="status">Aucune donnée enregistrée</p>
-                    <p class="range">Plage : 36.1-37.2 C</p>
+                    <p class="range">Plage : XXXX/YYY</p>
                 </article>
                 <article class="card tone-cyan">
-                    <h2><span class="metric-icon">O2</span>Saturation en oxygène</h2>
+                    <h2><span class="metric-icon">XX</span>XXXXX</h2>
                     <p class="status">Aucune donnée enregistrée</p>
-                    <p class="range">Plage : 95-100%</p>
+                    <p class="range">Plage : XXXX/YYY</p>
                 </article>
             </section>
 

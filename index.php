@@ -23,8 +23,14 @@ switch ($page) {
         break;
     case 'connexion':
         include('vue/connexion/connexion.php');
-        break;    
-            
+        break;
+    case 'dashbord':
+        include('vue/dashbord/dashbord.php');
+        break;
+    case 'ajoutercategorie':
+        include('vue/dashbord/ajoutercategorie.php');
+        break;
+
     default:
         include('vue/accueil/accueil.php');
         break;

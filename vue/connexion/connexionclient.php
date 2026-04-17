@@ -1,4 +1,4 @@
-<form method="POST" action="controller/admin/admin.php">
+<form method="POST" action="controller/connexion/connexionclient.php">
     <div class="mb-3">
         <label for="mail" class="form-label">email</label>
         <input type="mail" class="form-control" id="mail" name="mail">

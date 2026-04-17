@@ -9,9 +9,7 @@
                     <span class="small text-white-50 ms-2">########################</span>
                 </div>
                 <div class="col-12 col-md-4 text-center text-md-start">
-                    <a href="index.php?page=admin">admin</a>
                     <a href="index.php?page=deco">deco</a>
-
                 </div>
 
                 <div class="col-12 col-md-4 text-center">

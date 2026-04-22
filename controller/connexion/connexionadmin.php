@@ -13,7 +13,7 @@ if (isset($_POST['logadmin'])) {
             $_SESSION['role'] = 'admin';
             $_SESSION['user'] = $user;
             $_SESSION['id'] = $reqs->fetch()['id'];
-            header('Location:  http://127.0.0.1/BTSSIO/projet/projetDumbFit/index.php?page=accueil');
+            header('Location: ../../index.php?page=accueil');
             exit();
         } else {
             echo ('Incorrect user or password');

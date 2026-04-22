@@ -27,15 +27,15 @@ switch ($page) {
     case 'connexion':
         include('vue/connexion/connexion.php');
         break;
-<<<<<<< HEAD
-=======
     case 'dashbord':
         include('vue/dashbord/dashbord.php');
         break;
     case 'ajoutercategorie':
         include('vue/dashbord/ajoutercategorie.php');
         break;
->>>>>>> 1e1ad6c1aa876fa2c067438b65dcee85cb365b04
+    case 'ajouterstat':
+        include('vue/dashbord/ajouterstat.php');
+        break;
 
     default:
         include('vue/accueil/accueil.php');

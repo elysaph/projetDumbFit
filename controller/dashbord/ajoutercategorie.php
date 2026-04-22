@@ -15,10 +15,10 @@ if (isset($_POST['ajoutcate'])) {
     $req->bindParam(':id_categorie', $id_categorie);
     $req->execute();
 
-    header("Location: http://127.0.0.1/BTSSIO/projet/projetDumbFit/index.php?page=accueil");
+    header('Location: ../../index.php?page=accueil');
     exit();
 } else {
-    // Si on arrive ici directement, on peut par exemple rediriger vers l'accueil
-    header("http://127.0.0.1/BTSSIO/projet/projetDumbFit/index.php?page=accueil");
+    // Si on arrive ici directement, on redirige vers l'accueil.
+    header('Location: ../../index.php?page=accueil');
     exit();
 }

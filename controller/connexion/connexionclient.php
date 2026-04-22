@@ -13,7 +13,7 @@ if (isset($_POST['logclient'])) {
             $_SESSION['role'] = 'client';
             $_SESSION['mail'] = $mail;
             $_SESSION['id'] = $reqs->fetch()['id'];
-            header('Location:  http://127.0.0.1/BTSSIO/projet/projetDumbFit/index.php?page=accueil');
+            header('Location: ../../index.php?page=accueil');
             exit();
         } else {
             echo ('Incorrect email or password');

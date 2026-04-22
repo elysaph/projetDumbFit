@@ -8,12 +8,12 @@ if (isset($_POST['logpros'])) {
         $mail = $_POST['mail'];
         $mdp = $_POST['mdp'];
         $reqs = $bdd->prepare('SELECT * FROM pros WHERE mail = ? and mdp = ? ');
-        $reqs->execute(array($user, $mdp));
+        $reqs->execute(array($mail, $mdp));
         if ($reqs->rowCount() > 0) {
             $_SESSION['role'] = 'pros';
             $_SESSION['mail'] = $mail;
             $_SESSION['id'] = $reqs->fetch()['id'];
-            header('Location:  http://127.0.0.1/BTSSIO/projet/projetDumbFit/index.php?page=accueil');
+            header('Location: ../../index.php?page=accueil');
             exit();
         } else {
             echo ('Incorrect email or password');

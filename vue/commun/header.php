@@ -24,26 +24,74 @@ if (isset($_SESSION['username']) && is_string($_SESSION['username'])) {
 </head>
 
 <body>
-    <div id="app">
-        <header class="topbar">
-            <div class="wrap topbar-row">
-                <a class="brand" href="index.php?page=accueil">DumbFit</a>
+    <?php
+    if (isset($_SESSION['user'])) {
 
-                <?php if ($isLoggedIn): ?>
-                    <nav class="menu" aria-label="Navigation principale">
-                        <a class="menu-link<?php echo $page === 'accueil' ? ' active' : ''; ?>" href="index.php?page=accueil">Tableau de bord</a>
-                        <a class="menu-link<?php echo $page === 'profil' ? ' active' : ''; ?>" href="index.php?page=profil">Profil</a>
-                        <a class="menu-cta" href="index.php?page=deco">Se deconnecter</a>
-                    </nav>
-                <?php else: ?>
-                    <nav class="menu" aria-label="Navigation principale">
-                        <a class="menu-link<?php echo $page === 'accueil' ? ' active' : ''; ?>" href="index.php?page=accueil">Tableau de bord</a>
-                        <a class="menu-link<?php echo $page === 'inscription' ? ' active' : ''; ?>" href="index.php?page=inscription">Creer un compte</a>
-                        <a class="menu-link<?php echo $page === 'connexion' ? ' active' : ''; ?>" href="index.php?page=connexion">Connexion</a>
-                    </nav>
-                <?php endif; ?>
+    ?>
+        <nav class="navbar sticky-top navbar-expand-lg bg-transparent">
+            <div class="container-fluid">
+
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <a class="navbar-brand mx-auto" href="index.php">
+                        <img src="#" alt="Logo" width="70" height="70">
+                    </a>
+                    <ul class="navbar-nav mb-2 mb-lg-0 ">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.php?page=accueil">accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.php?page=categorie">categorie</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.php?page=objectif">objectif</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.php?page=verif">verif des proffesionelles de santé</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    <?php
+    } else {
+
+    ?>
+        <nav class="navbar sticky-top navbar-expand-lg bg-transparent">
+            <div class="container-fluid">
+
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <a class="navbar-brand mx-auto" href="index.php">
+                        <img src="#" alt="Logo" width="70" height="70">
+                    </a>
+                    <ul class="navbar-nav mb-2 mb-lg-0 ">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.php?page=accueil">accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.php?page=inscription">inscription</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.php?page=objectif">objectif</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.php?page=connexion">connexion</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </header>
 
-        <main class="wrap page">
-            <p class="eyebrow">Bienvenue, <?php echo htmlspecialchars($username); ?></p>
+    }
+    ?>

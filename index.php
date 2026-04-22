@@ -12,6 +12,9 @@ switch ($page) {
     case 'inscription':
         include('vue/inscription/inscription.php');
         break;
+    case 'profil':
+        include('vue/profil/profil.php');
+        break;
     case 'objectif':
         include('vue/objectif/objectif.php');
         break;
@@ -23,8 +26,8 @@ switch ($page) {
         break;
     case 'connexion':
         include('vue/connexion/connexion.php');
-        break;    
-            
+        break;
+
     default:
         include('vue/accueil/accueil.php');
         break;

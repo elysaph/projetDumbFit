@@ -11,7 +11,7 @@
         </footer>
         </div>
 
-        <script src="asset/script.js" defer></script>
+        <script src="asset/script.js"></script>
         </body>
 
         </html>
